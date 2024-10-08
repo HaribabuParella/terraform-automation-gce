@@ -1,13 +1,13 @@
 provider "google" {
   project     = "hari-cloud-first-project"
   region      = "us-central1"
-  zone        = "us-central1-c"
   credentials = file("terraform.json")
 }
 
 resource "google_compute_instance" "default" {
   name         = "my-instance"
   machine_type = "n2-standard-2"
+  zone        = "us-central1-c"
 
 
   boot_disk {
