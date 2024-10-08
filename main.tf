@@ -1,7 +1,7 @@
 provider "google" {
   project     = "hari-cloud-first-project"
   region      = "us-central1"
-  zone        = "us-central1-a"
+  credentials = file("terraform.json")
 }
 
 resource "google_compute_instance" "default" {
