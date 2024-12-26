@@ -1,5 +1,5 @@
 provider "google" {
-  project     = "hari-cloud-first-project"
+  project     = "hari-gcp-learning-project"
   region      = "us-central1"
   credentials = file("terraform.json")
 }
